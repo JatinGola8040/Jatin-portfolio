@@ -39,34 +39,30 @@ const Publications = (): JSX.Element => (
                       {publication}
                     </span>
                   </p>
-                  {(coAuthors?.length || coAuthor) && (
+                  {(Array.isArray(coAuthors) && coAuthors.length > 0) && (
                     <div className="mt-2 opacity-80 text-sm md:text-base flex items-center gap-2 flex-wrap">
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 opacity-80" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M12 12c2.761 0 5-2.239 5-5S14.761 2 12 2 7 4.239 7 7s2.239 5 5 5zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z" />
                       </svg>
-                      {Array.isArray(coAuthors) && coAuthors.length > 0 ? (
-                        <span className="flex items-center gap-1 flex-wrap">
-                          {coAuthors.map((a: any, idx: number, arr: any[]) => (
-                            <React.Fragment key={idx}>
-                              {a.link ? (
-                                <a
-                                  href={a.link}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="underline decoration-white/30 hover:decoration-white/60 hover:text-blue-300 transition-colors"
-                                >
-                                  {a.name}
-                                </a>
-                              ) : (
-                                <span>{a.name}</span>
-                              )}
-                              {idx < arr.length - 1 && <span>,</span>}
-                            </React.Fragment>
-                          ))}
-                        </span>
-                      ) : (
-                        <span className="flex items-center gap-1 flex-wrap">{coAuthor}</span>
-                      )}
+                      <span className="flex items-center gap-1 flex-wrap">
+                        {coAuthors.map((a: any, idx: number, arr: any[]) => (
+                          <React.Fragment key={idx}>
+                            {a.link ? (
+                              <a
+                                href={a.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline decoration-white/30 hover:decoration-white/60 hover:text-blue-300 transition-colors"
+                              >
+                                {a.name}
+                              </a>
+                            ) : (
+                              <span>{a.name}</span>
+                            )}
+                            {idx < arr.length - 1 && <span>,</span>}
+                          </React.Fragment>
+                        ))}
+                      </span>
                     </div>
                   )}
                 </div>
