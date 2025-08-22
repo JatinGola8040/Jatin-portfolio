@@ -19,7 +19,7 @@ const Publications = (): JSX.Element => (
         <div className="text-center opacity-70">No publications added yet.</div>
       )}
 
-      {publications.map(({ id, title, coAuthor, coAuthors, description, publication, publicationDate, url }) => (
+      {publications.map(({ id, title, coAuthors, description, publication, publicationDate, url }) => (
         <Sparkle as="div" key={id} duration={Math.floor(Math.random() * 10000) + 10000}>
           <div className="w-full p-3 md:p-5 lg:p-10">
             <div className="text-start">
