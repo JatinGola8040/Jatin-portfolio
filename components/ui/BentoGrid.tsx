@@ -24,6 +24,7 @@ interface BentoGridItemProps {
   description?: string | React.ReactNode;
   link?: string;
   github?: string;
+  techs?: string[];
   img?: string;
   titleClassName?: string;
 }
@@ -104,16 +105,18 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
               {description}
             </p>
 
-            <div className="flex flex-wrap gap-2 py-1">
-              {techs.map((techs) => (
-                <div
-                  key={techs}
-                  className="bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-white/15 hover:ring-1 hover:ring-white/40 hover:shadow-[0_0_18px_rgba(255,255,255,0.35)] transition duration-200 ease-in-out"
-                >
-                  {techs}
-                </div>
-              ))}
-            </div>
+            {Array.isArray(techs) && techs.length > 0 && (
+              <div className="flex flex-wrap gap-2 py-1">
+                {techs.map((tech) => (
+                  <div
+                    key={tech}
+                    className="bg-white/10 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-white/15 hover:ring-1 hover:ring-white/40 hover:shadow-[0_0_18px_rgba(255,255,255,0.35)] transition duration-200 ease-in-out"
+                  >
+                    {tech}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </div>
