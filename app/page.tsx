@@ -32,7 +32,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="h-screen bg-[#02061f] flex">
+    <main className="h-full bg-[#02061f] flex">
       <NavBar />
       <div className="w-full overflow-y-auto overflow-x-hidden mx-auto">
         <div className="px-5 md:px-10 lg:px-40">
