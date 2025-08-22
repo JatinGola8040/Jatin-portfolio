@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 350 15% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 350 15% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 350 15% 10%;
+
+    --primary: 350 65% 40%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 350 60% 95%;
+    --secondary-foreground: 350 65% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply !scroll-smooth;
+  }
+  body {
+    @apply text-white;
+  }
+  button {
+    @apply active:outline-none;
+  }
+  /* Hide scrollbars globally */
+  /* Apply to all elements to catch scrollable containers too */
+  *, html, body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* Hide WebKit-based scrollbars (Chrome, Safari, Opera, Edge Chromium) */
+  *::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+  }
+}
+
+@layer utilities {
+  h2 {
+    @apply text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-extrabold;
+  }
+  h3 {
+    @apply text-4xl sm:text-5xl md:text-6xl text-center font-extrabold;
+  }
+  p{
+    @apply text-sm sm:text-lg;
+  }
+}
