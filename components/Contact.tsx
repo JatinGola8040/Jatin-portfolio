@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="mb-5"></div>
         <Reveal>
           <h3 className="title mb-10 font-semibold">
-            Let's <span className=" bg-gradient-to-r from-blue-600 to-blue-300 font-semibold bg-clip-text text-transparent">connect</span>
+            Let&apos;s <span className=" bg-gradient-to-r from-blue-600 to-blue-300 font-semibold bg-clip-text text-transparent">connect</span>
           </h3>
         </Reveal>
 
@@ -91,7 +91,7 @@ const Contact = () => {
                 <div className="pt-2 flex justify-center">
                   <Button
                     title={sending ? "Sending..." : "Contact Me"}
-                    icon={<img src="assets/send.svg" />}
+                    icon={<img src="assets/send.svg" alt="Send" />}
                     position="right"
                     handleClick={() => formRef.current?.requestSubmit()}
                     otherClasses="w-full md:w-56"
