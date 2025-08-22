@@ -50,7 +50,7 @@ export const projects = [
 		className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
 		titleClassName: "justify-end",
 		img: "https://i.pinimg.com/originals/be/f4/1a/bef41a7d5a877841bbf7d8f9f0d42f14.gif",
-		github: "https://github.com/JatinGola8040/Gender-Detection-Speech-Analysis",
+		github: "https://github.com/JatinGola8040/Automated-Text-Summarization.git",
 		link: "#hero",
 		techs: ["Python", "TensorFlow", "EasyOCR", "HuggingFace", "T5", "Gradio"],
 	},
@@ -74,8 +74,8 @@ export const projects = [
 		className: "lg:col-span-2 md:col-span-3 md:row-span-2",
 		titleClassName: "justify-center",
 		img: "https://i.pinimg.com/originals/54/b5/24/54b52468335fd6eb935e330eb3197b25.gif",
-		github: "https://github.com/atzin-escandia",
-		link: "https://atzinescandia.dev",
+		github: "#hero",
+		link: "#hero",
 		techs: ["Python", "Scikit-learn", "Pandas", "Numpy", "Tableau"],
 	},
 	{
@@ -86,7 +86,7 @@ export const projects = [
 		className: "lg:col-span-2 md:col-span-3 md:row-span-1",
 		titleClassName: "justify-center",
 		img: "https://i.pinimg.com/736x/c7/de/01/c7de016c811fa5fae9d7120402f27645.jpg",
-		github: "https://github.com/atzin-escandia",
+		github: "https://github.com/JatinGola8040/Gender-Detection-Speech-Analysis.git",
 		link: "#hero",
 		techs:["Python", "TensorFlow", "pyaudio", "librosa", "Pandas", "Gradio"]
 		
