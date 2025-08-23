@@ -23,7 +23,7 @@ const Home = () => {
       window.history.replaceState(null, "", window.location.pathname + window.location.search);
     }
 
-    const scroller = document.querySelector(".overflow-y-auto") as HTMLElement | null;
+    const scroller = document.querySelector(".overflow-y-scroll") as HTMLElement | null;
     if (scroller) {
       scroller.scrollTo({ top: 0, behavior: "auto" });
     } else {
@@ -32,9 +32,9 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="h-screen bg-[#02061f] flex">
+    <main className="h-screen absolute overflow-hidden bg-[#02061f] flex">
       <NavBar />
-      <div className="w-full overflow-y-auto mx-auto overflow-x-hidden">
+      <div className="w-full overflow-y-scroll mx-auto overflow-x-hidden">
         <div className="px-5 md:px-10 lg:px-40">
           <FloatingBar />
           <Hero />

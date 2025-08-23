@@ -11,7 +11,7 @@ const NavBar = (): JSX.Element => {
   const [hideOnHero, setHideOnHero] = useState<boolean>(true);
 
   useEffect(() => {
-    const rootEl = document.querySelector(".overflow-y-auto") as HTMLElement | null;
+    const rootEl = document.querySelector(".overflow-y-scroll") as HTMLElement | null;
 
     // Observe only the sections we navigate to
     const ids = navItems.map(({ link }) => link.replace('#', ''));
