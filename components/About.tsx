@@ -11,7 +11,7 @@ const About = () => {
     "TensorFlow", "Scikit-learn", "Gradio", "Streamlit", "Seaborn", "Pytorch", "Matplotlib", "OpenCV", "Pandas", "NumPy", "Matlab"
   ]);
   const softwareNames = new Set([
-    "PowerBI", "Tableau Public", "CorelDraw", "Adobe Photoshop", "Premier Pro", "After Effects", "Adobe Illustrator", "Canva", "Figma", "Microsoft Office", "MS Excel", "VS Code", "Git", "GitHub"
+    "PowerBI", "Tableau Public", "CorelDraw", "Adobe Photoshop", "Premier Pro", "After Effects", "Adobe Illustrator", "Canva", "Figma", "Microsoft Office", "MS Excel", "VS Code", "Git", "GitHub", "Antigravity"
   ]);
 
   const frontend = myTechStack.filter((s) => frontendNames.has(s.name));

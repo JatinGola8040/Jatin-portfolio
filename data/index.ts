@@ -38,6 +38,7 @@ export const myTechStack: Tech[] = [
   { name: "HTML", icon: "assets/tech/html.svg" },
   { name: "CSS", icon: "assets/tech/css.svg" },
   { name: "VS Code", icon: "assets/tech/vscode.svg" },
+  { name: "Antigravity", icon: "assets/tech/antigravity.svg" },
   { name: "JavaScript", icon: "assets/tech/javascript.svg" },
 ];
 
