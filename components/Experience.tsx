@@ -3,8 +3,8 @@ import { workExperience } from "@/data";
 import { Sparkle } from "./ui/Sparkle";
 
 const Experience = (): JSX.Element => (
-  <section id="experience" className="sm:py-20 w-full">
-    <div className="mb-20"></div>
+  <section id="experience" className="py-10 sm:py-20 w-full">
+    <div className="mb-10 md:mb-20"></div>
     <h3 className="title text-center font-semibold">
       My{' '}
       <span className="bg-gradient-to-r from-blue-600 to-blue-300 bg-clip-text text-transparent">
@@ -17,7 +17,7 @@ const Experience = (): JSX.Element => (
         <Sparkle key={id} duration={Math.floor(Math.random() * 10000) + 10000}>
           <div className="p-3 md:p-5 lg:p-10">
             <div className="text-start">
-              <div className="flex justify-between"><div>
+              <div className="flex flex-col sm:flex-row justify-between gap-2"><div>
                 <h3 className="text-justify text-lg lg:text-3xl font-bold">{company}</h3>
                 <p className="text-xl md:text-2xl font-semibold mt-3">
                   <span className="bg-gradient-to-r from-blue-400 to-blue-400 bg-clip-text text-transparent">
@@ -26,7 +26,7 @@ const Experience = (): JSX.Element => (
                 </p>
               </div>
 
-                <div className="text-end font-regular opacity-80">
+                <div className="text-start sm:text-end font-regular opacity-80">
                   <p>{period}</p>
                   <p>{location}</p>
                 </div></div>

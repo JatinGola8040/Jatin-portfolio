@@ -45,7 +45,7 @@ const VariableFontText = () => {
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 relative">
+    <div className="pb-10 pt-20 md:pb-20 md:pt-36 relative">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -57,21 +57,21 @@ const Hero = () => {
         />
         <Spotlight className="left-80 top-28 h-[100vh] w-[50vw]" fill="blue" />
       </div>
-      <div className="mb-40"></div>
-      <div className="text-center my-20 mx-auto max-w-[1300px] justify-center flex flex-col ">
+      <div className="mb-16 md:mb-40"></div>
+      <div className="text-center my-10 md:my-20 mx-auto max-w-[1300px] justify-center flex flex-col ">
         <Reveal delay={0.1}>
-          <h1 className="text-center text-4xl md:text-6xl lg:text-9xl font-light ">
+          <h1 className="text-center text-3xl sm:text-4xl md:text-6xl lg:text-9xl font-light ">
             Hey, I&apos;m{' '}
             <VariableFontText />
           </h1>
         </Reveal>
         <Reveal delay={0.2}>
-          <h2 className="title my-6 text-xl md:text-3xl lg:text-5xl font-medium">
+          <h2 className="title my-4 md:my-6 text-lg sm:text-xl md:text-3xl lg:text-5xl font-medium">
             I&apos;m an AI Enthusiast
           </h2>
         </Reveal>
         <Reveal delay={0.3}>
-          <p className="max-w-[1000px] mx-auto md:text-2xl">
+          <p className="max-w-[1000px] mx-auto text-sm sm:text-base md:text-2xl px-2">
             A designer, developer and Artificial Intelligence enthusiast who spends way too much time on exploring AI models and fashioning designs.
           </p>
         </Reveal>
@@ -82,7 +82,7 @@ const Hero = () => {
             position="right"
           /></Reveal>
         </a>
-        <div className="mb-40"></div>
+        <div className="mb-16 md:mb-40"></div>
       </div>
     </div>
   );

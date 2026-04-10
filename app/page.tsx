@@ -35,7 +35,7 @@ const Home = () => {
     <main className="h-screen absolute overflow-hidden bg-[#02061f] flex">
       <NavBar />
       <div className="w-full overflow-y-scroll mx-auto overflow-x-hidden">
-        <div className="px-5 md:px-10 lg:px-40">
+        <div className="px-4 sm:px-5 md:px-10 lg:px-40">
           <FloatingBar />
           <Hero />
           <About />

@@ -19,8 +19,8 @@ const About = () => {
   const software = myTechStack.filter((s) => softwareNames.has(s.name));
 
   return (
-  <section id="about" className="py-20 w-full space-y-10">
-    <div className="mb-20"></div>
+  <section id="about" className="py-10 md:py-20 w-full space-y-10">
+    <div className="mb-10 md:mb-20"></div>
     <Reveal>
       <h3 className="mb-10 font-semibold">
         About{' '}
@@ -46,7 +46,7 @@ const About = () => {
       </Sparkle>
 
       <div
-        className="relative h-full overflow-hidden rounded-3xl border border-blue-300 transition duration-200 shadow-input dark:shadow-none flex flex-col space-y-4 p-10 "
+        className="relative h-full overflow-hidden rounded-3xl border border-blue-300 transition duration-200 shadow-input dark:shadow-none flex flex-col space-y-4 p-5 md:p-10 "
       >
         <p className="text-lg lg:text-3xl font-bold">
           <span className="bg-gradient-to-r from-blue-600 to-blue-300 bg-clip-text text-transparent">

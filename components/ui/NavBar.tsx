@@ -107,7 +107,7 @@ const NavBar = (): JSX.Element => {
   }, []);
 
   return (
-    <div className="fixed top-1/2 -translate-y-1/2 left-2 z-50">
+    <div className="hidden md:block fixed top-1/2 -translate-y-1/2 left-2 z-50">
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: hideOnHero ? 0 : 1, x: hideOnHero ? -30 : 0 }}

@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <section className="w-full pt-10 sm:pt-20 pb-6 sm:pb-8 justify-center flex items-center z-20" id="contact">
-      <div className="flex flex-col items-center text-center w-full px-5 md:px-10 lg:px-40 max-w-5xl">
+      <div className="flex flex-col items-center text-center w-full max-w-5xl">
         <div className="mb-5"></div>
         <Reveal>
           <h3 className="title mb-10 font-semibold">

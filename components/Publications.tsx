@@ -5,8 +5,8 @@ import { publications } from "@/data";
 import { Sparkle } from "./ui/Sparkle";
 
 const Publications = (): JSX.Element => (
-  <section id="publication" className="sm:py-20 w-full">
-    <div className="mb-20"></div>
+  <section id="publication" className="py-10 sm:py-20 w-full">
+    <div className="mb-10 md:mb-20"></div>
     <h3 className="title text-center font-semibold">
       My{' '}
       <span className="bg-gradient-to-r from-blue-600 to-blue-300 bg-clip-text text-transparent">
@@ -23,7 +23,7 @@ const Publications = (): JSX.Element => (
         <Sparkle as="div" key={id} duration={Math.floor(Math.random() * 10000) + 10000}>
           <div className="w-full p-3 md:p-5 lg:p-10">
             <div className="text-start">
-              <div className="flex justify-between">
+              <div className="flex flex-col sm:flex-row justify-between gap-2">
                 <div>
                   <h3
                     className="text-left text-lg lg:text-2xl font-bold overflow-hidden"
@@ -67,7 +67,7 @@ const Publications = (): JSX.Element => (
                   )}
                 </div>
 
-                <div className="text-end font-regular opacity-80 flex flex-col items-end gap-2">
+                <div className="text-start sm:text-end font-regular opacity-80 flex flex-col items-start sm:items-end gap-2">
                   <p>{publicationDate}</p>
                   {url && (
                     <button

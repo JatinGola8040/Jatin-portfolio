@@ -31,8 +31,8 @@ const Certifications = () => {
   const prev = () => setIndex((i) => (i - 1 + total) % total);
 
   return (
-    <section id="certifications" className="py-20 w-full">
-      <div className="mb-20"></div>
+    <section id="certifications" className="py-10 md:py-20 w-full">
+      <div className="mb-10 md:mb-20"></div>
       <Reveal>
         <h3 className="mb-10 title text-center font-semibold">
           Licences & {""}

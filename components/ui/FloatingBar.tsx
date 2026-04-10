@@ -10,7 +10,7 @@ const NAV_CONTAINER_CLASSES = cn(
   "flex sm:gap-5 p-2 sm:px-5 sm:py-4 rounded-full border border-white/20"
 );
 
-const WRAPPER_CLASSES = cn("fixed z-[40] top-10 left-1/2 -translate-x-1/2");
+const WRAPPER_CLASSES = cn("fixed z-[40] top-6 sm:top-10 left-1/2 -translate-x-1/2");
 
 const NAV_CONTAINER_STYLES: React.CSSProperties = {
   backgroundColor: "rgba(255, 255, 255, 0)",
