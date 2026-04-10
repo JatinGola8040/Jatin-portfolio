@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Figtree } from "next/font/google";
 import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
 
-const montserrat = Montserrat({ subsets: ["latin"], weight: ["100", "200", "400", "700", '900'] });
+const figtree = Figtree({ subsets: ["latin"], weight: [ "300", "400", "700", '900'] });
 
 export default function RootLayout({
   children,
@@ -15,7 +15,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jg.png" sizes="any" />
       </head>
-      <body className={`${montserrat.className}`}>
+      <body className={`${figtree.className}`}>
         {children}
         <CustomCursor />
       </body>

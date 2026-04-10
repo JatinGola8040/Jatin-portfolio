@@ -330,12 +330,12 @@ export const publications = [
 export const education = [
   {
     id: 1,
-    school: "XXXXXXX XXXXXXX XXXXXXXX",
-    degree: "YYYYYYYYYYYYYYYY",
+    school: "Vivekananda Institute of Professional Studies",
+    degree: "Masters of Computer Applications",
     fieldOfStudy: "Computer Science",
-    grades: "8.7 CGPA",
-    period: "Aug 2021 - May 2025",
-    location: "City, Country",
+    grades: "8.3 CGPA",
+    period: "2025 - Present",
+    location: "Pitampura, New Delhi",
   },
   {
     id: 2,
