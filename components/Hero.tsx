@@ -1,6 +1,47 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Inter } from "next/font/google";
 import Button from "./ui/Button";
 import Reveal from "./ui/Reveal";
 import { Spotlight } from "./ui/Spotlight";
+
+const inter = Inter({
+  subsets: ["latin"],
+});
+
+const HERO_NAME = "Jatin Gola!";
+
+const VariableFontText = () => {
+  const characters = HERO_NAME.split("");
+
+  return (
+    <span className={`${inter.className} inline-block`}>
+      {characters.map((char, i) => (
+        <motion.span
+          key={i}
+          className="inline-block bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent"
+          style={{ fontVariationSettings: `"wght" 700` }}
+          animate={{
+            fontVariationSettings: [
+              `"wght" 100`,
+              `"wght" 900`,
+              `"wght" 100`,
+            ],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            ease: "easeInOut",
+            delay: i * 0.15,
+          }}
+        >
+          {char === " " ? "\u00A0" : char}
+        </motion.span>
+      ))}
+    </span>
+  );
+};
 
 const Hero = () => {
   return (
@@ -20,10 +61,8 @@ const Hero = () => {
       <div className="text-center my-20 mx-auto max-w-[1300px] justify-center flex flex-col ">
         <Reveal delay={0.1}>
           <h1 className="text-center text-4xl md:text-6xl lg:text-9xl font-light ">
-            Hey, I&apos;m {''}
-            <span className="bg-gradient-to-r from-blue-800 to-blue-300 bg-clip-text text-transparent font-bold ">
-              Jatin Gola!
-            </span>
+            Hey, I&apos;m{' '}
+            <VariableFontText />
           </h1>
         </Reveal>
         <Reveal delay={0.2}>
